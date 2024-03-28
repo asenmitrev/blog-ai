@@ -63,6 +63,9 @@ function IndexPage(props: IndexProps) {
         {config.googleSiteVerification && (
           <meta name="google-site-verification" content={config.googleSiteVerification} />
         )}
+        {config.googleAdsenseVerification && (
+          <meta name="google-adsense-account" content={config.googleAdsenseVerification} />
+        )}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={config.title} />
         <meta name="twitter:description" content={config.description} />
@@ -91,7 +94,7 @@ function IndexPage(props: IndexProps) {
               <SiteTitle className="site-title">
                 {props.data.logo ? (
                   <img
-                    style={{ maxHeight: '55px', height: '55px' }}
+                    style={{ maxHeight: '120px', height: '120px' }}
                     src={getSrc(props.data.logo)}
                     alt={config.title}
                   />
@@ -132,7 +135,7 @@ function IndexPage(props: IndexProps) {
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/logo.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FIXED)
       }

@@ -202,6 +202,7 @@ const NavStyles = css`
   display: flex;
   margin: 0 0 0 -12px;
   padding: 0;
+  align-items: center;
   list-style: none;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 

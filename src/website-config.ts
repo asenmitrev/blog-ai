@@ -41,6 +41,7 @@ export type WebsiteConfig = {
    * Meta tag for Google Webmaster Tools
    */
   googleSiteVerification?: string;
+  googleAdsenseVerification?: string;
   /**
   /**
    * Appears alongside the footer, after the credits
@@ -58,9 +59,9 @@ const config: WebsiteConfig = {
   description:
     'Аз съм Аврора и това е моят блог. Тук правя записки за всички места, на които съм била, и това, което ми се е случило. Това е моят travel blog.',
   coverImage: 'img/cover.webp',
-  logo: 'img/ghost-logo.png',
+  logo: 'img/logo.png',
   lang: 'en',
-  siteUrl: 'https://gatsby-casper.netlify.com',
+  siteUrl: 'https://aurora.xn--90aexm.com/',
   // facebook: 'https://www.facebook.com/ghost',
   // twitter: 'https://twitter.com/tryghost',
   showSubscribe: false,
@@ -68,8 +69,9 @@ const config: WebsiteConfig = {
   // 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
   // mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
   // mailchimpEmailFieldName: 'MERGE0',
-  googleSiteVerification: 'GoogleCode',
-  footer: 'is based on Gatsby Casper',
+  googleSiteVerification: '6bGR3o9w-if2JP0rFHHVTjimxnEyvwSPjmnMJTuW7is',
+  googleAdsenseVerification: 'ca-pub-5631475815973885',
+  footer: 'е блог за пътуване.',
   showAllTags: true,
 };
 
